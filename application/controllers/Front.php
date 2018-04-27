@@ -12,14 +12,12 @@ class Front extends CI_Controller {
     
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('first_page');
+        $this->twig->display('first_page');
 	}
     
     public function principal()
     {
-      $this->load->view('header');
-      $this->load->view('principal');  
+      $this->twig->display('principal');
     }
     
     

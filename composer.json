@@ -11,7 +11,10 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"php": ">=5.4.8"
+		"php": ">=5.4.8",
+		"twig/twig" : "^2.0",
+		"co-developers/ci-twig" : "^2.0",
+		"twig/extensions" : "^1.5"
 	},
 	"suggest": {
 		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
