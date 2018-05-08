@@ -32,7 +32,8 @@ class Twig {
             'set_select',
             'set_checkbox',
             'set_radio',
-            'validation_errors'
+            'validation_errors',
+            'lang'
         ];
         $this->init();
     }
