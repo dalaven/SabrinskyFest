@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -52,3 +53,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Front';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+$route['^en/(.+)$'] = "$1";
+$route['^es/(.+)$'] = "$1"; 
+$route['^pt/(.+)$'] = "$1"; 
+
+$route['^en$'] = $route['default_controller'];
+$route['^es$'] = $route['default_controller'];
+$route['^pt$'] = $route['default_controller'];
