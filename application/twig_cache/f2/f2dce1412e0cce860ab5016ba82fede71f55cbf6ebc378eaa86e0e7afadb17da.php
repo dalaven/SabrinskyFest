@@ -95,23 +95,23 @@ class __TwigTemplate_4796ee77794c218d2fa390f3624d1ba9da0aa50be17175251286d65c416
         // line 36
         echo lang("IDIOMA");
         echo "</span>
-                    <a href=\"\">
+                    <a href=\"\">|
                         <img src=\"";
         // line 38
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_spain.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
                         <img src=\"";
         // line 41
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_usa.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
                         <img src=\"";
         // line 44
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_portugal.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
 
                 </article>
@@ -184,14 +184,14 @@ class __TwigTemplate_4796ee77794c218d2fa390f3624d1ba9da0aa50be17175251286d65c416
             <section class=\"small-12 medium-8 large-10 columns header__languaje\" style=\"top:0\">
                 <article style=\"float:right\">
                     <span style=\"color:white\">{{lang(\"IDIOMA\")}}</span>
-                    <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                    <a href=\"\">|
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_spain.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_usa.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_portugal.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
 
                 </article>

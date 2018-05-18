@@ -6,7 +6,6 @@
 
 class MY_Config extends CI_Config {
 
-/*
 	function site_url($uri = '')
 	{	
 		if (is_array($uri))
@@ -22,7 +21,6 @@ class MY_Config extends CI_Config {
 
 		return parent::site_url($uri);
 	}
-*/
 		
 }
 
