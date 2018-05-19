@@ -22,9 +22,10 @@ class __TwigTemplate_b9de9ed42343f30f3ae55b16fd8f02b28de75e38f2c9d1eb16487c6e829
     }
 
     // line 1
-    public function macro_principal_nav(...$__varargs__)
+    public function macro_principal_nav($__menu__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
+            "menu" => $__menu__,
             "varargs" => $__varargs__,
         ));
 
@@ -33,87 +34,43 @@ class __TwigTemplate_b9de9ed42343f30f3ae55b16fd8f02b28de75e38f2c9d1eb16487c6e829
         ob_start();
         try {
             // line 2
-            echo "    <section class=\"small-12 medium-8 large-12 columns header__navigation\" style=\"position: relative;margin-top: -75px;float:left;\">
-        <article class=\"medium-4 large-2 columns\">
-
-        </article>
-        <article class=\"small-12 medium-8 large-10 columns\">
-            <nav class=\"\" >
-                <ul style=\"list-style:none;\">
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
+            echo "    <section class=\"small-12 medium-12 large-12 columns header__navigation\" style=\"position: relative;margin-top: -15px;float:left; z-index: 100;padding:0\" style=\"background-image: url(";
+            echo twig_escape_filter($this->env, base_url(), "html", null, true);
+            echo "assets/images/Fondo.jpg);\" >
+            <nav>
+                <ul style=\"list-style:none;\" id=\"myMenu\" >
+                    ";
+            // line 5
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(($context["menu"] ?? null));
+            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
+                // line 6
+                echo "                        <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;background-image: url(";
+                echo twig_escape_filter($this->env, base_url(), "html", null, true);
+                echo "assets/images/Fondo.jpg);\" data-menuanchor=\"";
+                echo lang($context["item"]);
+                echo "\" >
+                        <a href=\"#";
+                // line 7
+                echo lang($context["item"]);
+                echo "\" id=\"botonProgreso\" class=\"boton-activo\" >
                             <span >
                                 ";
-            // line 12
-            echo lang("FESTIVAL");
-            echo "
-                            </span>
-                            <!--CONVOCATORIA-->
-                            <!--CORTOMETRAJES(FORMULARIOS)-->
-                            <!--TEASER(FORMULARIOS)-->
-                            <!--PARTICIPACIONES-->
-                            <!--CORTOMETRAJES-->
-                            <!--TEASER-->
-                            <!---->
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                ";
-            // line 27
-            echo lang("TALENTO SABRINSKY");
-            echo "
+                // line 9
+                echo lang($context["item"]);
+                echo "
                             </span>
                         </a>
                     </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                ";
-            // line 35
-            echo lang("CINE AL AIRE");
-            echo "
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                ";
-            // line 43
-            echo lang("BICINEMA");
-            echo "
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                ";
-            // line 50
-            echo lang("SABRINSKY BLOGS");
-            echo "
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                ";
-            // line 57
-            echo lang("QUIENES SOMOS");
-            echo "
-                            </span>
-                            <!--MISION Y VISION-->
-                        </a>
-                    </li>
+                    ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 14
+            echo "                    
                 </ul>
             </nav>
-        </article>
 </section>    
     ";
 
@@ -135,75 +92,27 @@ class __TwigTemplate_b9de9ed42343f30f3ae55b16fd8f02b28de75e38f2c9d1eb16487c6e829
 
     public function getDebugInfo()
     {
-        return array (  108 => 57,  98 => 50,  88 => 43,  77 => 35,  66 => 27,  48 => 12,  36 => 2,  25 => 1,);
+        return array (  71 => 14,  60 => 9,  55 => 7,  48 => 6,  44 => 5,  37 => 2,  25 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% macro principal_nav()%}
-    <section class=\"small-12 medium-8 large-12 columns header__navigation\" style=\"position: relative;margin-top: -75px;float:left;\">
-        <article class=\"medium-4 large-2 columns\">
-
-        </article>
-        <article class=\"small-12 medium-8 large-10 columns\">
-            <nav class=\"\" >
-                <ul style=\"list-style:none;\">
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
+        return new Twig_Source("{% macro principal_nav(menu)%}
+    <section class=\"small-12 medium-12 large-12 columns header__navigation\" style=\"position: relative;margin-top: -15px;float:left; z-index: 100;padding:0\" style=\"background-image: url({{base_url()}}assets/images/Fondo.jpg);\" >
+            <nav>
+                <ul style=\"list-style:none;\" id=\"myMenu\" >
+                    {% for item in menu %}
+                        <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;background-image: url({{base_url()}}assets/images/Fondo.jpg);\" data-menuanchor=\"{{lang(item)}}\" >
+                        <a href=\"#{{lang(item)}}\" id=\"botonProgreso\" class=\"boton-activo\" >
                             <span >
-                                {{lang(\"FESTIVAL\")}}
-                            </span>
-                            <!--CONVOCATORIA-->
-                            <!--CORTOMETRAJES(FORMULARIOS)-->
-                            <!--TEASER(FORMULARIOS)-->
-                            <!--PARTICIPACIONES-->
-                            <!--CORTOMETRAJES-->
-                            <!--TEASER-->
-                            <!---->
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                {{lang(\"TALENTO SABRINSKY\")}}
+                                {{lang(item)}}
                             </span>
                         </a>
                     </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                {{lang(\"CINE AL AIRE\")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                
-                                {{lang(\"BICINEMA\")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                {{lang(\"SABRINSKY BLOGS\")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style=\"float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;\" >
-                        <a href=\"index.php/Front/principal\" id=\"botonProgreso\" class=\"boton-activo\">
-                            <span >
-                                {{lang(\"QUIENES SOMOS\")}}
-                            </span>
-                            <!--MISION Y VISION-->
-                        </a>
-                    </li>
+                    {% endfor%}
+                    
                 </ul>
             </nav>
-        </article>
 </section>    
     {% endmacro%}", "_tools/navigation.twig", "C:\\xampp\\htdocs\\SabrinskyFest\\application\\views\\_tools\\navigation.twig");
     }

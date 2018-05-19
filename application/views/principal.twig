@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="{{base_url()}}assets/css/core.min.css" type="text/css" />
         <link rel="stylesheet" href="{{base_url()}}assets/css/carrousel.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{base_url()}}assets\css\jquery.fullPage.css" />
+
         <!--______________________________________________________End Css__________________________________________________________-->
     </head>
     <body style="background-image: url({{base_url()}}assets/images/Fondo.jpg);">
@@ -34,13 +36,13 @@
             <section class="small-12 medium-8 large-10 columns header__languaje" style="top:0">
                 <article style="float:right">
                     <span style="color:white">{{lang("IDIOMA")}}</span>
-                    <a href="{{site_url($this->lang->switch_uri('es')}}">|
+                    <a href="">|
                         <img src="{{base_url()}}assets/images/site/language/flag_spain.png" title="" style="height:2rem"/>
                     </a>
-                    <a href="{{$this->lang->switch_uri('en')}}">
+                    <a href="">
                         <img src="{{base_url()}}assets/images/site/language/flag_usa.png" title="" style="height:2rem"/>
                     </a>
-                    <a href="{{$this->lang->switch_uri('pt')}}">
+                    <a href="">
                         <img src="{{base_url()}}assets/images/site/language/flag_portugal.png" title="" style="height:2rem"/>
                     </a>
 
@@ -49,9 +51,11 @@
             </section>
 
         </section>
-
         {{ nav.principal_nav()}}
-        {{ ui.section()}}
-        <br>
-        {{ ui.section_test()}}
-    </body>
+
+                {{ ui.section()}}
+          
+                {{ ui.section_test()}}
+
+</body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

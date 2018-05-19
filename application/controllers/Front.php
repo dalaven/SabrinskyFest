@@ -19,6 +19,10 @@ class Front extends CI_Controller {
     {
       $this->twig->display('principal');
     }
+    public function prueba1()
+    {
+      $this->twig->display('prueba1');
+    }
     
     
     

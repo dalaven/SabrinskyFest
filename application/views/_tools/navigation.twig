@@ -1,66 +1,18 @@
-{% macro principal_nav()%}
-    <section class="small-12 medium-8 large-12 columns header__navigation" style="position: relative;margin-top: -75px;float:left;">
-        <article class="medium-4 large-2 columns">
-
-        </article>
-        <article class="small-12 medium-8 large-10 columns">
-            <nav class="" >
-                <ul style="list-style:none;">
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
+{% macro principal_nav(menu)%}
+    <section class="small-12 medium-12 large-12 columns header__navigation" style="position: relative;margin-top: -15px;float:left; z-index: 100;padding:0" style="background-image: url({{base_url()}}assets/images/Fondo.jpg);" >
+            <nav>
+                <ul style="list-style:none;" id="myMenu" >
+                    {% for item in menu %}
+                        <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;background-image: url({{base_url()}}assets/images/Fondo.jpg);" data-menuanchor="{{lang(item)}}" >
+                        <a href="#{{lang(item)}}" id="botonProgreso" class="boton-activo" >
                             <span >
-                                {{lang("FESTIVAL")}}
-                            </span>
-                            <!--CONVOCATORIA-->
-                            <!--CORTOMETRAJES(FORMULARIOS)-->
-                            <!--TEASER(FORMULARIOS)-->
-                            <!--PARTICIPACIONES-->
-                            <!--CORTOMETRAJES-->
-                            <!--TEASER-->
-                            <!---->
-                        </a>
-                    </li>
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
-                            <span >
-                                
-                                {{lang("TALENTO SABRINSKY")}}
+                                {{lang(item)}}
                             </span>
                         </a>
                     </li>
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
-                            <span >
-                                
-                                {{lang("CINE AL AIRE")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
-                            <span >
-                                
-                                {{lang("BICINEMA")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
-                            <span >
-                                {{lang("SABRINSKY BLOGS")}}
-                            </span>
-                        </a>
-                    </li>
-                    <li style="float:left; padding: 1em 1.3333em; border: 1px groove #DBA901;" >
-                        <a href="index.php/Front/principal" id="botonProgreso" class="boton-activo">
-                            <span >
-                                {{lang("QUIENES SOMOS")}}
-                            </span>
-                            <!--MISION Y VISION-->
-                        </a>
-                    </li>
+                    {% endfor%}
+                    
                 </ul>
             </nav>
-        </article>
 </section>    
     {% endmacro%}

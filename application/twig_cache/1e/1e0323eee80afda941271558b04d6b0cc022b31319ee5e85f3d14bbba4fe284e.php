@@ -55,36 +55,41 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/css/carrousel.css\" type=\"text/css\" />
         <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:800\" rel=\"stylesheet\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, base_url(), "html", null, true);
+        echo "assets\\css\\jquery.fullPage.css\" />
+
         <!--______________________________________________________End Css__________________________________________________________-->
     </head>
     <body style=\"background-image: url(";
-        // line 23
+        // line 25
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/images/Fondo.jpg);\">
         ";
-        // line 24
-        $context["nav"] = $this->loadTemplate("_tools/navigation.twig", "principal.twig", 24);
+        // line 26
+        $context["nav"] = $this->loadTemplate("_tools/navigation.twig", "principal.twig", 26);
         echo "  
         ";
-        // line 25
-        $context["ui"] = $this->loadTemplate("_tools/UIelement.twig", "principal.twig", 25);
+        // line 27
+        $context["ui"] = $this->loadTemplate("_tools/UIelement.twig", "principal.twig", 27);
         echo "  
 
         <section style=\"background-image: url(";
-        // line 27
+        // line 29
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/images/Fondo.jpg);width: 100%;display: block;background-position: center;background-size: cover;background-repeat: no-repeat;margin-top: 0;height: auto;overflow: hidden;border-bottom:3px double #DBA901\">
             <section class=\"small-12 medium-4 large-2 columns header__logotipo\" style=\"text-align:center;\">
                 <a href=\"";
-        // line 29
+        // line 31
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "\">
                     <img src=\"";
-        // line 30
+        // line 32
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/images/icono.png\" title=\"\" style=\"max-height:30vh;margin: 1rem 0\"/>
                     <img src=\"";
-        // line 31
+        // line 33
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
         echo "assets/images/logotipo.png\" title=\"\" style=\"height:30vh;left:30%;top:2%;position:absolute\"/> 
                 </a>
@@ -92,26 +97,26 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
             <section class=\"small-12 medium-8 large-10 columns header__languaje\" style=\"top:0\">
                 <article style=\"float:right\">
                     <span style=\"color:white\">";
-        // line 36
+        // line 38
         echo lang("IDIOMA");
         echo "</span>
-                    <a href=\"\">
+                    <a href=\"\">|
                         <img src=\"";
-        // line 38
+        // line 40
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_spain.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
                         <img src=\"";
-        // line 41
+        // line 43
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_usa.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
                         <img src=\"";
-        // line 44
+        // line 46
         echo twig_escape_filter($this->env, base_url(), "html", null, true);
-        echo "assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+        echo "assets/images/site/language/flag_portugal.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
 
                 </article>
@@ -119,21 +124,24 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
             </section>
 
         </section>
-
-        ";
-        // line 53
-        echo $context["nav"]->macro_principal_nav();
-        echo "
         ";
         // line 54
+        echo $context["nav"]->macro_principal_nav();
+        echo "
+
+                ";
+        // line 56
         echo $context["ui"]->macro_section();
         echo "
-        <br>
-        ";
-        // line 56
+          
+                ";
+        // line 58
         echo $context["ui"]->macro_section_test();
         echo "
-    </body>";
+
+</body>
+    <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
+";
     }
 
     public function getTemplateName()
@@ -148,7 +156,7 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
 
     public function getDebugInfo()
     {
-        return array (  134 => 56,  129 => 54,  125 => 53,  113 => 44,  107 => 41,  101 => 38,  96 => 36,  88 => 31,  84 => 30,  80 => 29,  75 => 27,  70 => 25,  66 => 24,  62 => 23,  55 => 19,  51 => 18,  47 => 17,  40 => 13,  33 => 9,  23 => 1,);
+        return array (  139 => 58,  134 => 56,  129 => 54,  118 => 46,  112 => 43,  106 => 40,  101 => 38,  93 => 33,  89 => 32,  85 => 31,  80 => 29,  75 => 27,  71 => 26,  67 => 25,  60 => 21,  55 => 19,  51 => 18,  47 => 17,  40 => 13,  33 => 9,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -173,6 +181,8 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
         <link rel=\"stylesheet\" href=\"{{base_url()}}assets/css/core.min.css\" type=\"text/css\" />
         <link rel=\"stylesheet\" href=\"{{base_url()}}assets/css/carrousel.css\" type=\"text/css\" />
         <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:800\" rel=\"stylesheet\">
+        <link rel=\"stylesheet\" type=\"text/css\" href=\"{{base_url()}}assets\\css\\jquery.fullPage.css\" />
+
         <!--______________________________________________________End Css__________________________________________________________-->
     </head>
     <body style=\"background-image: url({{base_url()}}assets/images/Fondo.jpg);\">
@@ -189,14 +199,14 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
             <section class=\"small-12 medium-8 large-10 columns header__languaje\" style=\"top:0\">
                 <article style=\"float:right\">
                     <span style=\"color:white\">{{lang(\"IDIOMA\")}}</span>
-                    <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                    <a href=\"\">|
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_spain.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_usa.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
                     <a href=\"\">
-                        <img src=\"{{base_url()}}assets/images/circulo.png\" title=\"\" style=\"height:2rem\"/>
+                        <img src=\"{{base_url()}}assets/images/site/language/flag_portugal.png\" title=\"\" style=\"height:2rem\"/>
                     </a>
 
                 </article>
@@ -204,11 +214,14 @@ class __TwigTemplate_8900fd35df2f1b5acdf2e96944c001b54ddbdca89ca0e3a4848b9af66cd
             </section>
 
         </section>
-
         {{ nav.principal_nav()}}
-        {{ ui.section()}}
-        <br>
-        {{ ui.section_test()}}
-    </body>", "principal.twig", "C:\\xampp\\htdocs\\SabrinskyFest\\application\\views\\principal.twig");
+
+                {{ ui.section()}}
+          
+                {{ ui.section_test()}}
+
+</body>
+    <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>
+", "principal.twig", "C:\\xampp\\htdocs\\SabrinskyFest\\application\\views\\principal.twig");
     }
 }
