@@ -1,9 +1,10 @@
 {% macro principal_nav(menu)%}
     <section class="small-12 medium-12 large-12 columns header__navigation" style="position: relative; z-index: 100;padding:0" style="background-image: url({{base_url()}}assets/images/Fondo.jpg);" >
+           
             <nav>
                 <ul style="list-style:none;display: table; width: 100%;margin-left:0; text-align:center;" id="myMenu" >
                     {% for item in menu %}
-                        <li style="display: table-cell; padding: 1em 1.3333em; border: 1px groove #DBA901;background-image: url({{base_url()}}assets/images/Fondo.jpg);" data-menuanchor="{{lang(item)}}" >
+                        <li style="display: table-cell; padding: 7px 0px; border: 1px groove #DBA901;background-image: url({{base_url()}}assets/images/Fondo.jpg);" data-menuanchor="{{lang(item)}}" >
                         <a href="#{{lang(item)}}" id="botonProgreso" class="boton-activo" >
                             <span >
                                 {{lang(item)}}
