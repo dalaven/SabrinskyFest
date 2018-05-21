@@ -33,6 +33,9 @@ class Twig {
             'set_checkbox',
             'set_radio',
             'validation_errors',
+            'ci_getflashdata',
+            'get_instance',
+            'set_element',
             'lang'
         ];
         $this->init();

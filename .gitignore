@@ -16,3 +16,5 @@ composer.lock
 
 /tests/tests/
 /tests/results/
+
+application/twig_cache/
